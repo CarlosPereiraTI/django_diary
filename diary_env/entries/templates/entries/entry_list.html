@@ -1,8 +1,8 @@
 <!-- entries/templates/entries/entry_list.html -->
 
 {% extends "entries/base.html" %}
-{% block content %}
 
+{% block content %}
 
 {% for entry in entry_list %}
 <article>
@@ -12,6 +12,6 @@
         <a href="{% url 'entry-detail' entry.id %}">{{ entry.title }}</a>
     </h3>
 </article>
-
 {% endfor %}
+
 {% endblock %}
