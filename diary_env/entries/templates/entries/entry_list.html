@@ -1,5 +1,9 @@
 <!-- entries/templates/entries/entry_list.html -->
 
+{% extends "entries/base.html" %}
+{% block content %}
+
+
 {% for entry in entry_list %}
 <article>
     <h2 class="{{ entry.date_created|date:'l' }}">{{ entry.date_created|date:'Y-m-d H:i' }}</h2>
@@ -10,3 +14,4 @@
 </article>
 
 {% endfor %}
+{% endblock %}
