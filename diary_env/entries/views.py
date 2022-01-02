@@ -7,13 +7,9 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
-
 from .models import Entry
-
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-
-
 
 
 # Create your views here.
